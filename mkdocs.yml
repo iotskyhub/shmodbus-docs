@@ -34,6 +34,11 @@ theme:
 
 nav:
   - Home: index.md
+  - Languages:
+    - 🇵🇱 Polski: pl/index.md
+    - 🇬🇧 English: en/index.md
+    - 🇩🇪 Deutsch: de/index.md
+    - 🇫🇷 Français: fr/index.md
 
 markdown_extensions:
   - admonition
