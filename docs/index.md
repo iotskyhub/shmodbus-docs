@@ -92,7 +92,7 @@ SHModbus is a real-time industrial data monitoring and visualization application
 
 ## Quick Start
 
-For detailed setup instructions, see the [Getting Started Guide](en/getting-started/).
+For detailed setup instructions, see the [Getting Started Guide](en/getting-started.md).
 
 Basic steps:
 1. Open the application in your web browser

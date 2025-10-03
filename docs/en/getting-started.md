@@ -437,4 +437,4 @@ If connections show issues in Diagnostics:
 - **GitHub**: Bug reports and suggestions
 ---
 
-**Need help?** Visit the [main documentation page](index.md) or contact our support team.
+**Need help?** Visit the [main documentation page](../index.md) or contact our support team.
