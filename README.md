@@ -1,14 +1,15 @@
 # SHModbus Documentation
 
-This repository contains the documentation for **SHModbus** - a real-time industrial data monitoring and visualization application that connects to Modbus devices.
+This repository contains the comprehensive documentation for **SHModbus** - a real-time industrial Modbus TCP/IP client application for monitoring and controlling Modbus devices.
 
-## 🌍 Multi-language Support
+## 📖 Documentation Content
 
-Documentation is available in 4 languages:
-- 🇵🇱 **Polski** (Polish)
-- 🇬🇧 **English** 
-- 🇩🇪 **Deutsch** (German)
-- 🇫🇷 **Français** (French)
+- **Complete Getting Started Guide**: Step-by-step installation, setup, and configuration
+- **Visual Interface Documentation**: Screenshots and detailed UI explanations
+- **Platform Support**: Windows and Linux installation guides
+- **Connection Management**: Modbus TCP/IP device connectivity
+- **Device Configuration**: Network point setup and data collection
+- **Troubleshooting**: Diagnostics and problem resolution
 
 ## 🚀 Live Documentation
 
@@ -67,19 +68,46 @@ Visit the live documentation: [https://iotskyhub.github.io/shmodbus-docs/](https
 
 ```
 docs/
-├── index.md                 # Main language selection page
-├── version.json             # Version information for SHModbus Client
-├── shared-images/           # Shared images across all languages
-│   └── shmodbus-app.png
-├── pl/                      # Polish documentation
-│   └── index.md
-├── en/                      # English documentation
-│   └── index.md
-├── de/                      # German documentation
-│   └── index.md
-└── fr/                      # French documentation
-    └── index.md
+├── index.md                     # Main documentation homepage
+├── en/
+│   └── getting-started.md       # Comprehensive Getting Started guide
+├── shared-images/               # Screenshots and visual guides
+│   ├── linux-console.png
+│   ├── linux-install.png
+│   ├── shmodbus-add-connection.png
+│   ├── shmodbus-add-device.png
+│   ├── shmodbus-add-network-point.png
+│   ├── shmodbus-login.png
+│   ├── windows-app-host.png
+│   ├── windows-console.png
+│   └── windows-shortcuts.png
+├── stylesheets/
+│   └── extra.css               # Custom styling for images and layout
+└── version.json                # Version information for SHModbus Client
 ```
+
+## 📋 Getting Started Guide Features
+
+The comprehensive Getting Started documentation includes:
+
+### Installation & Setup
+- **Platform-specific installers**: Windows (.exe) and Linux (.deb) packages
+- **Visual installation guides**: Step-by-step screenshots for both platforms
+- **Desktop shortcuts setup**: GUI and Console application options
+- **Command-line arguments**: Advanced configuration options for ports and URLs
+
+### Application Configuration
+- **Web interface access**: Browser-based configuration and monitoring
+- **User authentication**: Default login credentials and security setup
+- **Connection management**: Modbus TCP/IP device connectivity
+- **Device configuration**: Adding and managing multiple Modbus devices
+- **Network points setup**: Register mapping and data collection configuration
+
+### Advanced Features
+- **Port configuration**: Custom ports, network interfaces, and accessibility
+- **Data collection**: Real-time monitoring and automatic data polling
+- **Diagnostics**: Connection testing and troubleshooting tools
+- **Visual interface**: Screenshots for every configuration step
 
 ## 🔧 Version Information
 
@@ -119,4 +147,5 @@ This documentation is licensed under the MIT License.
 
 - **Repository**: [https://github.com/iotskyhub/shmodbus-docs](https://github.com/iotskyhub/shmodbus-docs)
 - **Issues**: [Report a bug or request a feature](https://github.com/iotskyhub/shmodbus-docs/issues)
+- **Email**: contact@iotskyhub.com
 - **Author**: IoT Sky Hub
