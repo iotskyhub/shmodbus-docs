@@ -31,6 +31,7 @@ theme:
     - search.highlight
     - search.share
     - content.code.copy
+    - navigation.instant
 
 nav:
   - Home: index.md

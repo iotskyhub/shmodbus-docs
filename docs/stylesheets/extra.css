@@ -1,5 +1,19 @@
 /* Custom styles for SHModbus documentation */
 
+/* Ensure header is always visible */
+.md-header {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background-color: var(--md-primary-fg-color) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Adjust main content to account for fixed header */
+.md-main {
+    margin-top: 2.4rem !important;
+}
+
 /* Image sizing and centering */
 .md-content img {
     max-width: 80%;
@@ -46,5 +60,9 @@
 @media (max-width: 768px) {
     .md-content img {
         max-width: 95%;
+    }
+    
+    .md-main {
+        margin-top: 3.2rem !important;
     }
 }
