@@ -2,6 +2,7 @@ site_name: SHModbus Documentation
 site_description: Documentation for SHModbus - A Modbus TCP/IP client application
 site_author: IotSkyHub
 site_url: https://iotskyhub.github.io/shmodbus-docs/
+use_directory_urls: true
 
 repo_name: iotskyhub/shmodbus-docs
 repo_url: https://github.com/iotskyhub/shmodbus-docs
@@ -46,8 +47,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
