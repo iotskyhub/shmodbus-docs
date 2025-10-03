@@ -1,17 +1,145 @@
 /* Custom styles for SHModbus documentation */
 
-/* Ensure header is always visible */
-.md-header {
+/* CRITICAL: Force header to be always visible with maximum priority */
+.md-header,
+header.md-header,
+.md-header--lifted,
+.md-header--shadow {
     position: fixed !important;
     top: 0 !important;
-    z-index: 1000 !important;
-    background-color: var(--md-primary-fg-color) !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background-color: #1976d2 !important;
+    background: #1976d2 !important;
+    height: 2.4rem !important;
+    min-height: 2.4rem !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+    transform: none !important;
+    transition: none !important;
+}
+
+/* Override any hiding behaviors */
+.md-header[data-md-state="hidden"] {
+    transform: none !important;
+    top: 0 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Force header content to be visible */
+.md-header__inner {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: none !important;
+    margin: 0 auto !important;
+    padding: 0 0.8rem !important;
+}
+
+/* Force title and navigation to be visible */
+.md-header__title,
+.md-header__button,
+.md-header__topic {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: white !important;
+}
+
+/* Backup: Create our own header if Material's header fails */
+body::before {
+    content: "SHModbus Documentation";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2.4rem;
+    background: #1976d2;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    font-weight: 500;
+    z-index: 10000;
+    font-size: 0.9rem;
+}
+
+/* Hide backup header when real header is working */
+.md-header:not([style*="display: none"]) ~ body::before,
+.md-header[style*="display: block"] ~ body::before {
+    display: none !important;
 }
 
 /* Adjust main content to account for fixed header */
 .md-main {
     margin-top: 2.4rem !important;
+    padding-top: 0.5rem !important;
+}
+
+/* Force body to have top padding */
+body {
+    padding-top: 2.4rem !important;
+}
+
+/* Image sizing and centering */
+.md-content img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Explicit centering class */
+.md-content img.center {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Center class wrapper for images */
+.center {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* Specific sizing for different image types */
+.md-content img[alt*="Desktop Shortcuts"],
+.md-content img[alt*="Login"] {
+    max-width: 400px;
+}
+
+.md-content img[alt*="Console"],
+.md-content img[alt*="Add Connection"],
+.md-content img[alt*="Add Device"],
+.md-content img[alt*="Add Network Point"] {
+    max-width: 500px;
+}
+
+.md-content img[alt*="Server Host"],
+.md-content img[alt*="Installation"] {
+    max-width: 600px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .md-content img {
+        max-width: 95%;
+    }
+    
+    .md-main {
+        margin-top: 3.2rem !important;
+    }
+    
+    body {
+        padding-top: 3.2rem !important;
+    }
 }
 
 /* Image sizing and centering */
