@@ -1,15 +1,15 @@
-# Getting Started with SHModbus
+# Getting Started with SHModbus :material-rocket-launch-outline:
 
-## System Requirements
+## System Requirements :material-clipboard-check-outline:
 
 - **Operating System**: Windows 10/11, Linux
 - **Browser**: Chrome, Firefox, Edge, Safari (latest versions)
 - **Network**: Access to Modbus TCP/IP devices on local network
 
-## Installation and Setup
+## Installation and Setup :material-download:
 
-### 1. Download Application
-1. Download the latest SHModbus version from the official website [link for a download](https://sourceforge.net/projects/shmodbus/)
+### 1. Download Application :material-download-box:
+1. Download the latest SHModbus version from the official website: [download link](https://sourceforge.net/projects/shmodbus/)
 2. **Choose the correct installation file for your platform**:
    - **SHModbus-V1.0.0-linux-x64.deb**: For Linux systems (64-bit Intel/AMD processors) - Debian package
    - **SHModbus-V1.0.0-linux-arm64.deb**: For Linux systems (ARM 64-bit processors, like Raspberry Pi 4) - Debian package
@@ -20,21 +20,21 @@
    
    ![Linux Package Installation](../shared-images/linux-install.png)
    
-   - **Linux (Terminal Method)**: Install the `.deb` package with `sudo dpkg -i SHModbus-V1.0.0-linux-*.deb`
+  - **Linux (Terminal Method)**: Install the `.deb` package with `sudo dpkg -i SHModbus-V1.0.0-linux-*.deb`
 
-### 2. First Launch
+### 2. First Launch :material-play-circle-outline:
 
-#### Windows Launch
+#### Windows Launch :material-microsoft-windows:
 
-1. **Double-click the SHModbus icon** on your desktop (not SHModbus Console)
+1. **Double-click the SHModbus icon** on your desktop (not SHModbus Console).
 ![Windows Desktop Shortcuts](../shared-images/windows-shortcuts.png)
-2. **SHModbus Server Host will open** - you should see the main server interface:
+2. **SHModbus Server Host will open**—you should see the main server interface:
 
 ![SHModbus Server Host Interface](../shared-images/windows-app-host.png)
 
-3. **Open browser** and navigate to `http://localhost:5000`
-4. **Check connection** - application should display the main interface
-5. **Configure devices** - add your first Modbus device
+3. **Open your browser** and navigate to `http://localhost:5000`.
+4. **Check the connection**—the application should display the main interface.
+5. **Configure devices**—add your first Modbus device.
 
 **Note**: There are two applications available:
 - **SHModbus**: Main web-based application (use this one)
@@ -44,40 +44,40 @@
 
 ![SHModbus Console Interface](../shared-images/windows-console.png)
 
-**For Advanced Users**: If you prefer command-line interface:
-- **Windows**: Double-click **SHModbus Console** icon on desktop
-- Provides direct command-line access to Modbus operations
-- Suitable for automation, scripting, or users who prefer terminal interfaces
+**For Advanced Users**: If you prefer a command-line interface:
+- **Windows**: Double-click the **SHModbus Console** icon on the desktop.
+- Provides direct command-line access to Modbus operations.
+- Suitable for automation, scripting, or users who prefer terminal interfaces.
 
-#### Linux Launch
+#### Linux Launch :material-linux:
 
-1. **Launch from Applications Menu**: 
-   - Look for "SHModbus" in your applications menu/launcher
-   - Or search for "SHModbus" in your system's application search
-2. **Alternative - Launch from Terminal**: 
-   - Open terminal and run: `shmodbus`
-   - Or run: `/home/[user_name]/shmodbus`
-3. **SHModbus will start** - you should see the console output:
+1. **Launch from Applications Menu**:
+  - Look for "SHModbus" in your applications menu/launcher.
+  - Or search for "SHModbus" in your system's application search.
+2. **Alternative—Launch from Terminal**:
+  - Open a terminal and run: `shmodbus`.
+  - Or run: `/home/[user_name]/shmodbus`.
+3. **SHModbus will start**—you should see console output:
 
 ![Linux Console Launch](../shared-images/linux-console.png)
 
-4. **Open browser** and navigate to `http://localhost:5000`
-5. **Check connection** - application should display the main interface
-6. **Configure devices** - add your first Modbus device
+4. **Open your browser** and navigate to `http://localhost:5000`.
+5. **Check the connection**—the application should display the main interface.
+6. **Configure devices**—add your first Modbus device.
 
 **Note**: After installing the .deb package, SHModbus should be available system-wide and accessible from the applications menu.
 
-### 3. Command-Line Arguments (Advanced)
+### 3. Command-Line Arguments (Advanced) :material-console-line:
 
 Both **SHModbus** and **SHModbus Console** applications support command-line arguments for advanced configuration:
 
-#### Available Arguments
+#### Available Arguments :material-format-list-bulleted:
 
 **Port Configuration:**
 - `--port 8080` or `--port=8080` - Set custom port (default: 5000)
 - `--urls http://0.0.0.0:8080` or `--urls=http://0.0.0.0:8080` - Set custom URLs
 
-#### Usage Examples
+#### Usage Examples :material-code-tags:
 
 **Windows (Command Prompt/PowerShell):**
 ```cmd
@@ -97,7 +97,7 @@ shmodbus --port 8080
 shmodbus --urls http://0.0.0.0:8080
 ```
 
-#### Argument Priority
+#### Argument Priority :material-sort-variant:
 
 The application uses the following priority order for configuration:
 1. **`--urls` argument** (highest priority)
@@ -105,7 +105,7 @@ The application uses the following priority order for configuration:
 3. **`ASPNETCORE_URLS` environment variable**
 4. **Default port 5000** (lowest priority)
 
-#### Environment Variables
+#### Environment Variables :material-file-code-outline:
 
 **Windows (PowerShell):**
 ```powershell
@@ -121,7 +121,7 @@ shmodbus
 
 **Note**: When using `--port` or `--urls` arguments, the application will be available on ALL network interfaces (0.0.0.0), making it accessible from other devices on your local network.
 
-### Port Configuration
+### Port Configuration :material-lan:
 
 **Default Ports**:
 - **Web Interface**: `http://localhost:5000` (default)
@@ -142,9 +142,9 @@ shmodbus
 
 **Note**: If port 5000 is already in use, SHModbus will automatically suggest an alternative port during startup.
 
-## Configuring Your First Device
+## Configuring Your First Device :material-devices:
 
-### Access Web Interface and Login
+### Access Web Interface and Login :material-web:
 
 Once SHModbus is running (either GUI or Console version), you need to access the web interface:
 
@@ -174,9 +174,9 @@ Once SHModbus is running (either GUI or Console version), you need to access the
 - The correct port number is being used
 - For network access, ensure the application was started with `--port` or `--urls` arguments
 
-### Step 1: Add Connection
+### Step 1: Add Connection :material-lan-connect:
 
-#### 1. Access Connection Management
+#### 1. Access Connection Management :material-view-list-outline:
 1. **In your web browser**, navigate to the main SHModbus browser window after successful login
 2. **In the left sidebar**, look for the **"Configuration"** section (gear icon)
 3. **Expand "Configuration"** if it's not already open
@@ -185,7 +185,7 @@ Once SHModbus is running (either GUI or Console version), you need to access the
 
 ![SHModbus Add Connection Interface](../shared-images/shmodbus-add-connection.png)
 
-#### 2. Fill Connection Details
+#### 2. Fill Connection Details :material-form-textbox:
 
 The "Add New Modbus Connection" dialog will open with the following fields:
 
@@ -206,7 +206,7 @@ The "Add New Modbus Connection" dialog will open with the following fields:
 3. **Click "Create"** button to save the connection
 4. **Click "Close"** to cancel without saving
 
-#### 3. Create and Verify Connection
+#### 3. Create and Verify Connection :material-check-circle-outline:
 1. **Click "Create"** button to save your connection settings
 2. **The dialog will close** and your connection will be added to the system
 3. **Check the left sidebar** - your new connection should appear under "Configuration"
@@ -224,9 +224,9 @@ Connect Automatically: Enabled
 
 **Note**: After creation, your connection will be available in the Configuration tree where you can manage devices, registers, and monitor real-time data.
 
-### Step 2: Add Device
+### Step 2: Add Device :material-plus-box-multiple-outline:
 
-#### 1. Access Device Management
+#### 1. Access Device Management :material-view-list-outline:
 1. **In the left sidebar**, locate your newly created connection (e.g., "Connection 1")
 2. **Check the connection status** - you should see a green circle with "0" indicating the connection is active
 3. **Expand your connection** by clicking the dropdown arrow next to it
@@ -234,7 +234,7 @@ Connect Automatically: Enabled
 
 ![SHModbus Add Device Interface](../shared-images/shmodbus-add-device.png)
 
-#### 2. Fill Device Details
+#### 2. Fill Device Details :material-form-textbox:
 
 The "Add New Modbus Device" dialog will open with the following fields:
 
@@ -254,7 +254,7 @@ The "Add New Modbus Device" dialog will open with the following fields:
   - When enabled: "Begin collecting data from this device immediately after creation"
   - Recommended to keep enabled for immediate monitoring
 
-#### 3. Create Device
+#### 3. Create Device :material-plus-circle-outline:
 1. **Fill in the Device Name** (descriptive name for your device)
 2. **Set the Modbus Address** (unique number 1-247 for this device)
 3. **Configure Start Data Collection** (recommended: keep enabled)
@@ -274,9 +274,9 @@ Start Data Collection: Enabled
 - The **Start Data Collection** feature allows immediate data monitoring after device creation
 - After creation, the device will appear under your connection in the Configuration tree
 
-### Step 3: Add Network Points
+### Step 3: Add Network Points :material-access-point-network:
 
-#### 1. Access Network Points Configuration
+#### 1. Access Network Points Configuration :material-file-tree:
 1. **In the left sidebar**, locate your created device (e.g., "Device 1")
 2. **Click on "Device 1"** to open the device configuration page
 3. **You'll see "No Network Points Configured"** message in the main content area
@@ -288,7 +288,7 @@ Start Data Collection: Enabled
 
 ![SHModbus Add Network Point Interface](../shared-images/shmodbus-add-network-point.png)
 
-#### 3. Configure Network Point Details
+#### 3. Configure Network Point Details :material-tune:
 
 The "Add Network Point" dialog will open with the following sections:
 
@@ -317,7 +317,7 @@ The "Add Network Point" dialog will open with the following sections:
 7. **Click "Create Network Point"** to save
 8. **Click "Cancel"** to abort without saving
 
-#### 4. Create Network Point
+#### 4. Create Network Point :material-plus-circle-outline:
 1. **Fill in Point Name** (descriptive identifier for your data point)
 2. **Set Register Address** (consult your device's Modbus map)
 3. **Select Register Type** (Holding Register, Input Register, etc.)
@@ -340,7 +340,7 @@ Poll Interval: Normal
 Enable Network Point: Yes
 ```
 
-#### 5. Verify Data Collection
+#### 5. Verify Data Collection :material-chart-line:
 After creating your first network point:
 1. **The dialog will close** and your point will be added to the device
 2. **The point appears** in the device's network points list
@@ -362,22 +362,22 @@ After creating your first network point:
 - **Configure alarms and alerts** based on point values
 - **Export point configurations** to CSV for backup or replication
 
-### Step 4: Test Connection (Diagnostics)
+### Step 4: Test Connection (Diagnostics) :material-stethoscope:
 
-#### 1. Access Diagnostics
+#### 1. Access Diagnostics :material-stethoscope:
 1. **In the left sidebar**, locate the **"Diagnostics"** section (stethoscope icon)
 2. **Expand "Diagnostics"** if it's not already open
 3. **Click on "General"** to access connection testing tools
 4. The diagnostics page will display connection status and testing options
 
-#### 2. Connection Testing
+#### 2. Connection Testing :material-connection:
 Once in the Diagnostics > General section:
 1. **View connection status** for all configured connections
 2. **Check device connectivity** and communication health
 3. **Monitor network point data flow** and quality
 4. **Review error logs** and troubleshooting information
 
-#### 3. Verify System Health
+#### 3. Verify System Health :material-heart-pulse:
 **Connection Status Indicators:**
 - **Green indicators**: Active and healthy connections
 - **Red indicators**: Failed or disconnected connections
@@ -388,7 +388,7 @@ Once in the Diagnostics > General section:
 - **Communication timeouts**: Check for network issues
 - **Register read/write success**: Confirm Modbus operations
 
-#### 4. Troubleshooting
+#### 4. Troubleshooting :material-wrench:
 If connections show issues in Diagnostics:
 1. **Check network connectivity** between SHModbus and devices
 2. **Verify IP addresses and ports** in connection settings
@@ -404,32 +404,32 @@ If connections show issues in Diagnostics:
 
 **Note**: The Diagnostics section provides comprehensive monitoring and troubleshooting tools for maintaining reliable Modbus communications.
 
-## Basic Functions
+## Basic Functions :material-view-dashboard-outline:
 
-### Real-Time Monitoring
+### Real-Time Monitoring :material-timer-sand:
 - **Data Table**: Automatic refresh every 2 seconds
 - **Real-Time Charts**: Trend visualization
 - **Notifications**: Alarms for critical values
 
-### Data Management
+### Data Management :material-database:
 - **Export to CSV**: Save historical data
 - **Filters**: Search for specific values
 - **Sorting**: Organize data as needed
 
-## Troubleshooting
+## Troubleshooting :material-alert-circle-outline:
 
-### Connection Issues
+### Connection Issues :material-lan-disconnect:
 - **Check IP address** of the device
 - **Verify port** (standard 502)
 - **Check system firewall**
 - **Test ping** to the device
 
-### Data Issues
+### Data Issues :material-database-alert-outline:
 - **Check register addresses** in device documentation
 - **Verify data type** (Int16, Float32, etc.)
 - **Check device Slave ID**
 
-## Technical Support
+## Technical Support :material-lifebuoy:
 
 - **Online Documentation**: [Full documentation](../index.md)
 - **Forum**: User community
