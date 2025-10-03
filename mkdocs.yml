@@ -8,57 +8,46 @@ repo_url: https://github.com/iotskyhub/shmodbus-docs
 
 theme:
   name: material
-  palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: blue
-      accent: blue
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
+    - navigation.instant
+    - navigation.tracking
     - navigation.top
+    - search.suggest
     - search.highlight
-    - search.share
     - content.code.copy
-
-nav:
-  - Home: index.md
-  - Getting Started: en/getting-started.md
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
-  - md_in_html
-  - tables
-  - toc:
-      permalink: true
-
-plugins:
-  - search
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/iotskyhub
 
 extra_css:
   - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Getting Started: en/getting-started.md

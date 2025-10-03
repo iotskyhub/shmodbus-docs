@@ -18,7 +18,7 @@
    - **Windows**: Run the `SHModbus-Vx.y.z-win-x64.exe` installer and follow the setup wizard
    - **Linux (GUI Method)**: Right-click the `.deb` file and select "Package Install"
    
-   ![Linux Package Installation](../shared-images/linux-install.png){ .center }
+   ![Linux Package Installation](../shared-images/linux-install.png)
    
    - **Linux (Terminal Method)**: Install the `.deb` package with `sudo dpkg -i SHModbus-V1.0.0-linux-*.deb`
 
@@ -27,10 +27,10 @@
 #### Windows Launch
 
 1. **Double-click the SHModbus icon** on your desktop (not SHModbus Console)
-![Windows Desktop Shortcuts](../shared-images/windows-shortcuts.png){ .center }
+![Windows Desktop Shortcuts](../shared-images/windows-shortcuts.png)
 2. **SHModbus Server Host will open** - you should see the main server interface:
 
-![SHModbus Server Host Interface](../shared-images/windows-app-host.png){ .center }
+![SHModbus Server Host Interface](../shared-images/windows-app-host.png)
 
 3. **Open browser** and navigate to `http://localhost:5000`
 4. **Check connection** - application should display the main interface
@@ -42,7 +42,7 @@
 
 **SHModbus Console (Alternative)**
 
-![SHModbus Console Interface](../shared-images/windows-console.png){ .center }
+![SHModbus Console Interface](../shared-images/windows-console.png)
 
 **For Advanced Users**: If you prefer command-line interface:
 - **Windows**: Double-click **SHModbus Console** icon on desktop
@@ -59,7 +59,7 @@
    - Or run: `/home/[user_name]/shmodbus`
 3. **SHModbus will start** - you should see the console output:
 
-![Linux Console Launch](../shared-images/linux-console.png){ .center }
+![Linux Console Launch](../shared-images/linux-console.png)
 
 4. **Open browser** and navigate to `http://localhost:5000`
 5. **Check connection** - application should display the main interface
@@ -156,7 +156,7 @@ Once SHModbus is running (either GUI or Console version), you need to access the
 
 3. **SHModbus Login Page** will appear:
 
-![SHModbus Login Interface](../shared-images/shmodbus-login.png){ .center }
+![SHModbus Login Interface](../shared-images/shmodbus-login.png)
 
 !!! info "Default Login Credentials"
     **Username:** `admin@admin`  
@@ -183,7 +183,7 @@ Once SHModbus is running (either GUI or Console version), you need to access the
 4. **Click on "Add Connection"** in the sidebar menu
 5. The Add Connection form will appear in the main content area
 
-![SHModbus Add Connection Interface](../shared-images/shmodbus-add-connection.png){ .center }
+![SHModbus Add Connection Interface](../shared-images/shmodbus-add-connection.png)
 
 #### 2. Fill Connection Details
 
@@ -232,7 +232,7 @@ Connect Automatically: Enabled
 3. **Expand your connection** by clicking the dropdown arrow next to it
 4. **Click on "Add Device"** option that appears under your connection
 
-![SHModbus Add Device Interface](../shared-images/shmodbus-add-device.png){ .center }
+![SHModbus Add Device Interface](../shared-images/shmodbus-add-device.png)
 
 #### 2. Fill Device Details
 
@@ -286,7 +286,7 @@ Start Data Collection: Enabled
 1. **Click "Add First Point"** button (blue button with plus icon)
 2. **Alternative**: Click **"Import CSV"** if you have existing point configurations to import
 
-![SHModbus Add Network Point Interface](../shared-images/shmodbus-add-network-point.png){ .center }
+![SHModbus Add Network Point Interface](../shared-images/shmodbus-add-network-point.png)
 
 #### 3. Configure Network Point Details
 
