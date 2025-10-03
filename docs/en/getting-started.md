@@ -232,7 +232,7 @@ Connect Automatically: Enabled
 3. **Expand your connection** by clicking the dropdown arrow next to it
 4. **Click on "Add Device"** option that appears under your connection
 
-![SHModbus Add Device Interface](../shared-images/shhmodbus-add-device.png){ .center }
+![SHModbus Add Device Interface](../shared-images/shmodbus-add-device.png){ .center }
 
 #### 2. Fill Device Details
 
