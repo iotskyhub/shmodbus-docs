@@ -1,10 +1,10 @@
 site_name: SHModbus Documentation
-site_description: Documentation for SHModbus - A Modbus communication library
-site_author: PJD Solutions
-site_url: https://pjdgsolutions.github.io/shmodbus-docs/
+site_description: Documentation for SHModbus - A Modbus TCP/IP client application
+site_author: IotSkyHub
+site_url: https://iotskyhub.github.io/shmodbus-docs/
 
-repo_name: pjdgsolutions/shmodbus-docs
-repo_url: https://github.com/pjdgsolutions/shmodbus-docs
+repo_name: iotskyhub/shmodbus-docs
+repo_url: https://github.com/iotskyhub/shmodbus-docs
 
 theme:
   name: material
@@ -34,11 +34,7 @@ theme:
 
 nav:
   - Home: index.md
-  - Languages:
-    - 🇵🇱 Polski: pl/index.md
-    - 🇬🇧 English: en/index.md
-    - 🇩🇪 Deutsch: de/index.md
-    - 🇫🇷 Français: fr/index.md
+  - Getting Started: en/getting-started.md
 
 markdown_extensions:
   - admonition
@@ -62,4 +58,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/pjdgsolutions
+      link: https://github.com/iotskyhub
+
+extra_css:
+  - stylesheets/extra.css
