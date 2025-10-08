@@ -10,9 +10,9 @@ repo_url: https://github.com/iotskyhub/shmodbus-docs
 theme:
   name: material
   features:
+    - header.autohide
     - navigation.instant
     - navigation.tracking
-    - navigation.top
     - toc.integrate
     - search.suggest
     - search.highlight

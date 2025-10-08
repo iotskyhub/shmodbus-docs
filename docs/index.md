@@ -1,5 +1,3 @@
-# SHModbus User Guide :material-book-open-page-variant:
-
 ![Screenshot of the SHModbus application](shared-images/shmodbus-app.png)
 
 ## Overview :material-information-outline:
