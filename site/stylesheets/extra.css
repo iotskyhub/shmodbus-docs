@@ -1,0 +1,49 @@
+/* Custom styles for SHModbus documentation (kept minimal to respect Material defaults) */
+
+/* Image sizing and centering */
+.md-content img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Optional helper class for explicit centering */
+.md-content img.center {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Wrapper utility */
+.center {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+/* Specific sizing for different image types */
+.md-content img[alt*="Desktop Shortcuts"],
+.md-content img[alt*="Login"] {
+    max-width: 400px;
+}
+
+.md-content img[alt*="Console"],
+.md-content img[alt*="Add Connection"],
+.md-content img[alt*="Add Device"],
+.md-content img[alt*="Add Network Point"] {
+    max-width: 500px;
+}
+
+.md-content img[alt*="Server Host"],
+.md-content img[alt*="Installation"] {
+    max-width: 600px;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    .md-content img {
+        max-width: 95%;
+    }
+}
